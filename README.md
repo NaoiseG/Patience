@@ -3,7 +3,7 @@
 ## Description
 The **Patience Game** (also known as Solitaire) is a classic card game that tests players' patience and strategy. This implementation includes core game mechanics such as shuffling, dealing cards, moving cards between columns, and detecting when the game is won.
 
-The game features a user-friendly interface and a responsive gameplay experience, allowing users to enjoy the traditional Patience game on their system.
+The game features a simple command-line interface interface and a responsive gameplay experience, allowing users to enjoy the traditional Patience game on their system.
 
 ## Table of Contents
 - [Installation](#installation)
