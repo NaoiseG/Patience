@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7821d74-984c-4e5b-9c0d-cafd9a8edd01" name="Changes" comment="Loading project">
-      <change afterPath="$PROJECT_DIR$/test/CardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CardCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager.java" afterDir="false" />
-    </list>
+    <list default="true" id="f7821d74-984c-4e5b-9c0d-cafd9a8edd01" name="Changes" comment="Loading project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +100,7 @@
       <updated>1727192044326</updated>
       <workItem from="1727192045399" duration="25480000" />
       <workItem from="1727427392890" duration="82722000" />
-      <workItem from="1728549505866" duration="5683000" />
+      <workItem from="1728549505866" duration="6011000" />
     </task>
     <task id="LOCAL-00001" summary="Loading project">
       <option name="closed" value="true" />
