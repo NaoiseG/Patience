@@ -61,7 +61,12 @@ public class GameBoard {
         for (int i = 0; i  < 4; i++){
             Pile pile = suitPiles.getPile(i);
             if (pile.size() < 1){
-                System.out.print(" |   |    ");
+                switch(i){
+                    case 0: System.out.print(" |" + Card.RED + "\u2665\u2665\u2665" + Card.RESET + "|    "); break;
+                    case 1: System.out.print(" |" + Card.RED + "\u2666\u2666\u2666" + Card.RESET + "|    "); break;
+                    case 2: System.out.print(" |" + Card.BLACK + "\u2660\u2660\u2660" + Card.RESET + "|    "); break;
+                    case 3: System.out.print(" |" + Card.BLACK + "\u2663\u2663\u2663" + Card.RESET + "|    "); break;
+                }
             }
             else{
                 System.out.print(" ");
@@ -109,6 +114,7 @@ public class GameBoard {
     }
     public void prompt(){
         printPoints();
+        printMoves();
         printTopLine();
         printLanes();
         System.out.println("Please enter command");
@@ -135,6 +141,7 @@ public class GameBoard {
                 drawPile.add(card);
             }
             showing.clear();
+            decreaseMove(); //Resetting pile doesn't count as move
         }
         else{
             Card drawnCard = drawPile.getTopCard();
@@ -171,6 +178,7 @@ public class GameBoard {
     public void printQuit(){
         System.out.println("Quitting game");
         printPoints();
+        printMoves();
     }
     public void printError(String message){
         System.out.println(message);
@@ -185,9 +193,20 @@ public class GameBoard {
     public void addPoints(int p){
         points += p;
     }
+    public void addMove(){
+        movesMade++;
+    }
+    public void decreaseMove(){
+        movesMade--;
+    }
+
     public void printPoints(){
         System.out.println("Points scored: " + points);
     }
+    public void printMoves(){
+        System.out.println("Moves made: " + movesMade);
+    }
 
 }
+
 

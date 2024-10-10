@@ -13,7 +13,9 @@ public class Manager {
         MoveHandler moveHandler = new MoveHandler(gameBoard);
         this.gameProcessor = new GameProcessor(gameBoard, inputHandler, moveHandler);
 
-        play(); //Start game
+        if(startMessage()){
+            play(); //Start game
+        }
     }
 
     public void play(){
@@ -27,15 +29,32 @@ public class Manager {
 
             if (inputHandler.isDrawCommand(input)){ //Check for draw
                 gameBoard.Draw();
+                gameBoard.addMove();
                 continue;
             }
             else if(!inputHandler.isValidInput(input)){ //Check less than 5 characters entered
                 gameBoard.printError("ERROR: INPUT \"" + input + "\" IS NOT VALID");
             }
             gameProcessor.processInput(input);
+            gameBoard.addMove();
 
             if(gameBoard.checkWin())
                 break;
+        }
+    }
+    public boolean startMessage(){
+        System.out.println("Welcome to the game!");
+        System.out.println("Press 'Enter' to start or 'Q' to quit");
+        String input = inputHandler.getInput();
+        while(true){
+            if(inputHandler.isQuitCommand(input)){
+                gameBoard.printQuit();
+                return false;
+            }
+            else if(inputHandler.isEnterCommand(input)){
+                System.out.println("Starting Game\n");
+                return true;
+            }
         }
     }
 }

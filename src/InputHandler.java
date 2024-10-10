@@ -15,6 +15,10 @@ public class InputHandler {
         return input.equalsIgnoreCase("Q");
     }
 
+    public boolean isEnterCommand(String input) {
+        return input.isEmpty();
+    }
+
     public boolean isDrawCommand(String input) {
         return input.equalsIgnoreCase("D");
     }

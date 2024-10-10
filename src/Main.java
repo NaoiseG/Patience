@@ -9,9 +9,7 @@ public class Main {
 //HS: 1135
 
 
-
-//Track moves made
-//Press enter to start game
-///////Multiple moves is label label number
+//White background
+//Symbols in suit piles
 
 

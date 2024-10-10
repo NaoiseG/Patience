@@ -1,5 +1,4 @@
 import java.util.LinkedList;
-import java.util.List;
 
 public abstract class CardCollection<T> {
     protected LinkedList<T> items = new LinkedList<>();  // Use LinkedList to store items
