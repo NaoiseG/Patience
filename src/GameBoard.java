@@ -22,6 +22,14 @@ public class GameBoard {
         setDrawPile(deck);
         setSuitPiles();
     }
+
+    public int getPoints() {
+        return points;
+    }
+
+    public int getMovesMade() {
+        return movesMade;
+    }
     public void setLanes(PileList lanes, Deck deck) {
 
         for (int i = 0; i < 7; i++){ //Create 7 empty piles in tableau
@@ -149,10 +157,13 @@ public class GameBoard {
             showing.add(drawnCard);
         }
     }
-    public static Pile getShowing(){
+    public Pile getShowing(){
         return showing;
     }
-    public static Pile getLane(int lane){
+    public Pile getDrawPile(){
+        return drawPile;
+    }
+    public  Pile getLane(int lane){
         return lanes.getPile(lane);
     }
 

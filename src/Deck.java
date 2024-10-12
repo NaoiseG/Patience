@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 
@@ -30,5 +29,9 @@ public class Deck {
         } else {
             return null; // Return null if the deck is empty
         }
+    }
+
+    public int size(){
+    return deck.size();
     }
 }

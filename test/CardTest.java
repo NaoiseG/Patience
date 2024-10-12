@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
@@ -53,7 +54,6 @@ public class CardTest {
         cardBlack.flip();
         assertFalse(cardBlack.isFaceDown());  // Should now be face up
 
-        // Flip again to verify toggle functionality
         cardRed.flip();
         assertTrue(cardRed.isFaceDown());  // Should be face down again
 
@@ -82,13 +82,13 @@ public class CardTest {
     @Test
     public void testPrintCardFaceDown(){
         cardRed.printCard();
-        String expected = "|XXX\033[0m|";
+        String expected = "|XXX\033[0m|"; //Face down card
         assertEquals(expected, outContent.toString());
 
         outContent.reset();
 
         cardBlack.printCard();
-        expected = "|XXX\u001B[0m|";
+        expected = "|XXX\033[0m|";
         assertEquals(expected, outContent.toString());
 
         outContent.reset();
@@ -100,12 +100,12 @@ public class CardTest {
         cardBlack.flip();
 
         cardRed.printCard();
-        String expected = "|\u001B[47m A\u001B[31;47m♥\033[0m|";
+        String expected = "|\u001B[31;47m A♥\033[0m|"; //Ace of hearts
         assertEquals(expected, outContent.toString());
         outContent.reset();
 
         cardBlack.printCard();
-        expected = "|\u001B[47m K\u001B[30;47m♠\033[0m|";
+        expected = "|\u001B[30;47m K♠\033[0m|"; //King of spades
         assertEquals(expected, outContent.toString());
         outContent.reset();
     }

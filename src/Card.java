@@ -1,10 +1,7 @@
 public class Card {
     public static final String RED = "\u001B[31;47m";  // Red
     public static final String RESET = "\033[0m";  // Reset color
-    public static final String BLACK = "\u001B[30;47m";  // Blue
-
-    final String WHITE_B = "\u001B[47m"; // White background
-
+    public static final String BLACK = "\u001B[30;47m";  // Black
 
     private boolean faceUp;  // Whether the card is face up or down
     private final boolean red; //True if card is red
@@ -45,7 +42,12 @@ public class Card {
     public void printCard(){
         System.out.print("|");
         if(faceUp) {
-            System.out.print(WHITE_B);
+            if(red){
+                System.out.print(RED);
+            }
+            else{
+                System.out.print(BLACK);
+            }
             switch (rank) {
                 case ACE:
                     System.out.print(" A");
@@ -66,16 +68,16 @@ public class Card {
 
             switch (suit) {
                 case HEARTS:
-                    System.out.print(RED + "\u2665");
+                    System.out.print("\u2665");
                     break;
                 case DIAMONDS:
-                    System.out.print(RED + "\u2666");
+                    System.out.print("\u2666");
                     break;
                 case SPADES:
-                    System.out.print(BLACK + "\u2660");
+                    System.out.print("\u2660");
                     break;
                 case CLUBS:
-                    System.out.print(BLACK + "\u2663");
+                    System.out.print("\u2663");
                     break;
                 default:
                     break;

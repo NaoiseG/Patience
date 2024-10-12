@@ -32,10 +32,10 @@ public class Manager {
                 gameBoard.addMove();
                 continue;
             }
-            else if(!inputHandler.isValidInput(input)){ //Check less than 5 characters entered
+            else if(!inputHandler.isValidLength(input)){ //Check less than 5 characters entered
                 gameBoard.printError("ERROR: INPUT \"" + input + "\" IS NOT VALID");
             }
-            gameProcessor.processInput(input);
+            gameProcessor.processInput(input); //Valid input always passed
             gameBoard.addMove();
 
             if(gameBoard.checkWin())

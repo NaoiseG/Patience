@@ -9,7 +9,4 @@ public class Main {
 //HS: 1135
 
 
-//White background
-//Symbols in suit piles
-
 

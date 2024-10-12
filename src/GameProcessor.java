@@ -47,9 +47,9 @@ public class GameProcessor {
         switch(to){
             case '1', '2', '3', '4', '5', '6', '7': int lane = Character.getNumericValue(to);
                 //Moved from pile to lane
-                moveHandler.addToLane(lane - 1, 1, GameBoard.getShowing()); break;
+                moveHandler.addToLane(lane - 1, 1, gameBoard.getShowing()); break;
             case 'h', 'd', 's', 'c': int suit = ParseInput.getSuitValue(to);
-                if(moveHandler.addToSuitPile(moves, suit, GameBoard.getShowing())){
+                if(moveHandler.addToSuitPile(moves, suit, gameBoard.getShowing())){
                 gameBoard.addPoints(10);
             };//Pile to Hearts
                 break;
@@ -66,11 +66,11 @@ public class GameProcessor {
 
         switch(to){
             case '1', '2', '3', '4', '5', '6', '7': int lane = Character.getNumericValue(to);
-                moveHandler.addToLane(lane - 1, moves, GameBoard.getLane(dealingLane - 1));
+                moveHandler.addToLane(lane - 1, moves, gameBoard.getLane(dealingLane - 1));
                 //////Award points for uncovering card
                 break;
             case 'h', 'd', 's', 'c': int suit = ParseInput.getSuitValue(to);
-                if(moveHandler.addToSuitPile(moves, suit, GameBoard.getLane(dealingLane - 1))){ //Lane to hearts
+                if(moveHandler.addToSuitPile(moves, suit, gameBoard.getLane(dealingLane - 1))){ //Lane to hearts
                 gameBoard.addPoints(20);
             }; break;
             default: gameBoard.printError("ERROR: DESTINATION PILE \"" + to + "\" DOESN'T EXIST"); break;

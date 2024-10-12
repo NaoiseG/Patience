@@ -23,7 +23,7 @@ public class InputHandler {
         return input.equalsIgnoreCase("D");
     }
 
-    public boolean isValidInput(String input) {
+    public boolean isValidLength(String input) {
         return input.length() >= 2 && input.length() <= 4;
     }
 

@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7821d74-984c-4e5b-9c0d-cafd9a8edd01" name="Changes" comment="Loading project" />
+    <list default="true" id="f7821d74-984c-4e5b-9c0d-cafd9a8edd01" name="Changes" comment="Loading project">
+      <change afterPath="$PROJECT_DIR$/test/DeckTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/GameBoardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/InputHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/MoveHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ParseInputTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/PileListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/PileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ParseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParseInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CardCollectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CardCollectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/FirstTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +59,15 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.CardTest.executor": "Run",
+    "JUnit.GameBoardTest.executor": "Run",
+    "JUnit.GameBoardTest.testGetSuitPiles.executor": "Run",
+    "JUnit.GameBoardTest.testInitialization.executor": "Debug",
+    "JUnit.InputHandlerTest.executor": "Run",
+    "JUnit.MoveHandlerTest.executor": "Run",
+    "JUnit.ParseInputTest.executor": "Run",
     "JUnit.Patience Test Suite.executor": "Run",
+    "JUnit.PileListTest.executor": "Run",
     "JUnit.Unnamed.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -71,6 +99,16 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="GameBoardTest.testGetSuitPiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Patience" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GameBoardTest" />
+      <option name="METHOD_NAME" value="testGetSuitPiles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Patience Test Suite" type="JUnit" factoryName="JUnit">
       <module name="Patience" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -81,6 +119,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GameBoardTest.testGetSuitPiles" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -100,7 +143,8 @@
       <updated>1727192044326</updated>
       <workItem from="1727192045399" duration="25480000" />
       <workItem from="1727427392890" duration="82722000" />
-      <workItem from="1728549505866" duration="6011000" />
+      <workItem from="1728549505866" duration="9765000" />
+      <workItem from="1728638397650" duration="12439000" />
     </task>
     <task id="LOCAL-00001" summary="Loading project">
       <option name="closed" value="true" />
