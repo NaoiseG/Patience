@@ -9,13 +9,13 @@ public class GameBoard {
     private static Pile showing;
 
     public GameBoard(Deck deck) {
-        points = 0;
+        points = 0; // Points earned
         movesMade = 0;
 
         suitPiles = new PileList();
         lanes = new PileList();
         drawPile = new Pile();
-        showing = new Pile();
+        showing = new Pile(); // Cards that have been drawn
 
 
         setLanes(lanes, deck);
@@ -30,7 +30,25 @@ public class GameBoard {
     public int getMovesMade() {
         return movesMade;
     }
-    public void setLanes(PileList lanes, Deck deck) {
+
+    public Pile getShowing(){
+        return showing;
+    }
+    public Pile getDrawPile(){
+        return drawPile;
+    }
+    public  Pile getLane(int lane){
+        return lanes.getPile(lane);
+    }
+
+    public PileList getLanes(){
+        return lanes;
+    }
+    public PileList getSuitPiles(){
+        return suitPiles;
+    }
+
+    public void setLanes(PileList lanes, Deck deck) { // 7 lanes with correct number of cards
 
         for (int i = 0; i < 7; i++){ //Create 7 empty piles in tableau
             lanes.addPile(new Pile());
@@ -47,19 +65,21 @@ public class GameBoard {
             card.flip();
         }
     }
-    public void dealToLane(int index, Card card){
+    public void dealToLane(int index, Card card){ // Add card to lane
         Pile pile = lanes.getPile(index);
         pile.add(card);
     }
-    public void setDrawPile(Deck deck) {
+
+    public void setDrawPile(Deck deck) { // Add rest of cards
         for (int i = 0; i < 24; i++){
             drawPile.add(deck.dealCard());
             Card card = drawPile.getTopCard();
             card.flip();
         }
     }
+
     public void setSuitPiles() {
-        for (int i = 0; i < 4; i++){ //Create 4 empty suit piles
+        for (int i = 0; i < 4; i++){ // Create 4 empty suit piles
             suitPiles.addPile(new Pile());
         }
     }
@@ -131,9 +151,9 @@ public class GameBoard {
     public int getLargestPileSize() {
         int largestSize = 0;
 
-        // Iterate through each pile in the lanes (tableau)
+        // Iterate through each pile in the lanes
         for (Pile pile : lanes.getPiles()) {
-            int pileSize = pile.size(); // Assuming Pile has a size() method to get the number of cards
+            int pileSize = pile.size();
             if (pileSize > largestSize) {
                 largestSize = pileSize; // Update largestSize if the current pile is larger
             }
@@ -149,22 +169,13 @@ public class GameBoard {
                 drawPile.add(card);
             }
             showing.clear();
-            decreaseMove(); //Resetting pile doesn't count as move
+            decreaseMove(); // Resetting pile doesn't count as move
         }
         else{
             Card drawnCard = drawPile.getTopCard();
             drawPile.removeTop();
             showing.add(drawnCard);
         }
-    }
-    public Pile getShowing(){
-        return showing;
-    }
-    public Pile getDrawPile(){
-        return drawPile;
-    }
-    public  Pile getLane(int lane){
-        return lanes.getPile(lane);
     }
 
     public boolean checkWin(){
@@ -193,12 +204,6 @@ public class GameBoard {
     }
     public void printError(String message){
         System.out.println(message);
-    }
-    public PileList getLanes(){
-        return lanes;
-    }
-    public PileList getSuitPiles(){
-        return suitPiles;
     }
 
     public void addPoints(int p){

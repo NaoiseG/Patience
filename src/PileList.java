@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public class PileList extends CardCollection<Pile> {
+public class PileList extends CardCollection<Pile> { // List of piles
 
     public PileList() {
         super();  // Call the constructor of CardCollection
@@ -8,17 +8,16 @@ public class PileList extends CardCollection<Pile> {
 
     // Add a Pile to the collection
     public void addPile(Pile pile) {
-        add(pile);  // Use the add() method from CardCollection
+        add(pile);  // Clarify adding pile
     }
 
     // Get a specific Pile from the collection
     public Pile getPile(int index) {
-        return get(index);  // Use the get() method from CardCollection
+        return get(index);  // Clarify getting pile
     }
 
-    // Return the list of piles (inherited from CardCollection)
     public LinkedList<Pile> getPiles() {
-        return items;  // Cast to LinkedList if you need specific LinkedList behavior
+        return items;  // Returns whole list
     }
 }
 

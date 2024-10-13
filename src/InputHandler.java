@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class InputHandler {
+public class InputHandler { // Checks input for draw, quit and valid input
     private final Scanner scanner;
 
     public InputHandler(Scanner scanner) {

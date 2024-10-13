@@ -1,7 +1,7 @@
-public enum Suit {
+public enum Suit { // Suit of card
     HEARTS(1), DIAMONDS(2), SPADES(3), CLUBS(4);
 
-    private final int value;
+    private final int value; // Integer value for suit
 
     Suit(int value) {
         this.value = value;
@@ -9,15 +9,5 @@ public enum Suit {
 
     public int getValue() {
         return value;
-    }
-
-    public static Suit fromChar(char c) {
-        return switch (Character.toLowerCase(c)) {
-            case 'h' -> HEARTS;
-            case 'd' -> DIAMONDS;
-            case 's' -> SPADES;
-            case 'c' -> CLUBS;
-            default -> throw new IllegalArgumentException("Invalid suit: " + c);
-        };
     }
 }

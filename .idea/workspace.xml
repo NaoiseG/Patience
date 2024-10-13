@@ -5,25 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7821d74-984c-4e5b-9c0d-cafd9a8edd01" name="Changes" comment="Loading project">
-      <change afterPath="$PROJECT_DIR$/test/DeckTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/GameBoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/InputHandlerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/MoveHandlerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ParseInputTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/PileListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/PileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CardCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CardCollection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Deck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoveHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ParseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParseInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/CardCollectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CardCollectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/CardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/FirstTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PileList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PileList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Suit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Suit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +140,7 @@
       <workItem from="1727192045399" duration="25480000" />
       <workItem from="1727427392890" duration="82722000" />
       <workItem from="1728549505866" duration="9765000" />
-      <workItem from="1728638397650" duration="12439000" />
+      <workItem from="1728638397650" duration="14425000" />
     </task>
     <task id="LOCAL-00001" summary="Loading project">
       <option name="closed" value="true" />

@@ -1,4 +1,4 @@
-public class ParseInput {
+public class ParseInput { // Parses input to determine source and destination piles and number of moves
     String input;
     int moves;
     char from;
@@ -19,7 +19,7 @@ public class ParseInput {
             case 'd' -> 2;  // Diamonds
             case 's' -> 3;  // Spades
             case 'c' -> 4;  // Clubs
-            default -> 0; //Move will be invalid
+            default -> 0; // Move will be invalid
         };
     }
 }

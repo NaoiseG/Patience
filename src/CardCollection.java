@@ -1,6 +1,6 @@
 import java.util.LinkedList;
 
-public abstract class CardCollection<T> {
+public abstract class CardCollection<T> { // Card or pile lists
     protected LinkedList<T> items = new LinkedList<>();  // Use LinkedList to store items
 
     public void add(T item) {

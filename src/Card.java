@@ -4,7 +4,7 @@ public class Card {
     public static final String BLACK = "\u001B[30;47m";  // Black
 
     private boolean faceUp;  // Whether the card is face up or down
-    private final boolean red; //True if card is red
+    private final boolean red; // True if card is red
 
     private final Suit suit;
     private final Rank rank;
@@ -24,21 +24,27 @@ public class Card {
         return !faceUp;
     }
 
+    // Returns rank
     public int getRank() {
         return rank.getValue();
     }
+
+    // Returns suit
     public Suit getSuit() {
         return suit;
     }
+
+    // Checks if card is red
     public boolean isRed() {
         return red;
     }
 
-    // Flip the card (toggle face-up/face-down)
+    // Flip the card
     public void flip() {
         faceUp = !faceUp;
     }
 
+    //Prints card or facedown card
     public void printCard(){
         System.out.print("|");
         if(faceUp) {

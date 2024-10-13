@@ -1,4 +1,4 @@
-public enum Rank {
+public enum Rank { // Card rank
     ACE(1),
     TWO(2),
     THREE(3),
@@ -13,7 +13,7 @@ public enum Rank {
     QUEEN(12),
     KING(13);
 
-    private final int value;
+    private final int value; // Integer value for rank
 
     Rank(int value) {
         this.value = value;
@@ -21,14 +21,5 @@ public enum Rank {
 
     public int getValue() {
         return value;
-    }
-
-    public static Rank fromValue(int value) {
-        for (Rank rank : Rank.values()) {
-            if (rank.getValue() == value) {
-                return rank;
-            }
-        }
-        throw new IllegalArgumentException("Invalid rank value: " + value);
     }
 }

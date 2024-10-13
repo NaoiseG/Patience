@@ -1,13 +1,10 @@
-public class Pile extends CardCollection<Card> {
+public class Pile extends CardCollection<Card> { // Pile of cards
 
     public Pile() {
-        super();  // Call the constructor of CardCollection
+        super(); // Superclass constructor
     }
-
-
-    // Additional methods unique to Pile can still be added if necessary
     public Card getTopCard() {
-        return getTop();  // Use the inherited getTop() method
+        return getTop(); // Method made to clarify it returns a card for readability
     }
 
     public void printTopCard() {

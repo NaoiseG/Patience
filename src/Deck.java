@@ -5,13 +5,13 @@ public class Deck {
     private final LinkedList<Card> deck;
 
     public Deck(){
-        deck = new LinkedList<>();
+        deck = new LinkedList<>(); // List of cards
         setDeck();
         shuffleDeck();
     }
 
     private void setDeck() {
-        for (Suit suit : Suit.values()) {
+        for (Suit suit : Suit.values()) { // 52 cards
             for (Rank rank : Rank.values()) {
                 deck.add(new Card(suit, rank));
             }
@@ -24,7 +24,7 @@ public class Deck {
 
     public Card dealCard() {
         if (!deck.isEmpty()) {
-            return deck.removeLast(); // Access the top card (last in the list)
+            return deck.removeLast(); // Access the top card
 
         } else {
             return null; // Return null if the deck is empty

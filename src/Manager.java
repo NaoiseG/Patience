@@ -6,7 +6,7 @@ public class Manager {
     private final GameProcessor gameProcessor;
 
     public Manager(){
-        Deck deck = new Deck(); //Initialise deck
+        Deck deck = new Deck(); // Initialise deck
 
         this.gameBoard = new GameBoard(deck);
         this.inputHandler = new InputHandler(new Scanner(System.in));
@@ -14,15 +14,15 @@ public class Manager {
         this.gameProcessor = new GameProcessor(gameBoard, inputHandler, moveHandler);
 
         if(startMessage()){
-            play(); //Start game
+            play(); // Start game
         }
     }
 
     public void play(){
         String input;
-        while (true){
+        while (true){ // Loop until quit or win
             gameBoard.prompt();
-            if(inputHandler.isQuitCommand(input = inputHandler.getInput())) {
+            if(inputHandler.isQuitCommand(input = inputHandler.getInput())) { // Check for quit command
                 gameBoard.printQuit();
                 break;
             }
@@ -42,7 +42,7 @@ public class Manager {
                 break;
         }
     }
-    public boolean startMessage(){
+    public boolean startMessage(){ // Check for 'Enter' to start game
         System.out.println("Welcome to the game!");
         System.out.println("Press 'Enter' to start or 'Q' to quit");
         String input = inputHandler.getInput();
