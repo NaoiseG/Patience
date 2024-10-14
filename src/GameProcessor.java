@@ -18,7 +18,7 @@ public class GameProcessor {
         char from = parseInput.from;
         int moves = parseInput.moves;
 
-        if(!inputHandler.validNumMoves(moves)){
+        if(!inputHandler.validNumMoves(moves) && moves != 100){
             gameBoard.printError("ERROR: " + moves + " NUMBER OF MOVES NOT VALID");// Check valid number of moves
             return;
         }
@@ -47,10 +47,13 @@ public class GameProcessor {
         switch(to){
             case '1', '2', '3', '4', '5', '6', '7': int lane = Character.getNumericValue(to);
                 //Moved from pile to lane
-                moveHandler.addToLane(lane - 1, 1, gameBoard.getShowing()); break;
+                if (moveHandler.addToLane(lane - 1, 1, gameBoard.getShowing())){
+                    gameBoard.addMove(); // Increment move counter
+                }; break;
             case 'h', 'd', 's', 'c': int suit = ParseInput.getSuitValue(to);
                 if(moveHandler.addToSuitPile(moves, suit, gameBoard.getShowing())){
                     gameBoard.addPoints(10); //Add points for correct move
+                    gameBoard.addMove(); // Increment move counter
                 };//Pile to Hearts
                 break;
             default:
@@ -66,12 +69,15 @@ public class GameProcessor {
 
         switch(to){
             case '1', '2', '3', '4', '5', '6', '7': int lane = Character.getNumericValue(to);
-                moveHandler.addToLane(lane - 1, moves, gameBoard.getLane(dealingLane - 1));
+                if (moveHandler.addToLane(lane - 1, moves, gameBoard.getLane(dealingLane - 1))){
+                gameBoard.addMove(); // Increment move counter
+            };
                 break;
             case 'h', 'd', 's', 'c': int suit = ParseInput.getSuitValue(to);
                 if(moveHandler.addToSuitPile(moves, suit, gameBoard.getLane(dealingLane - 1))){
                 gameBoard.addPoints(20);
-            }; break;
+                gameBoard.addMove(); // Increment move counter
+                }; break;
             default: gameBoard.printError("ERROR: DESTINATION PILE \"" + to + "\" DOESN'T EXIST"); break;
         }
     }

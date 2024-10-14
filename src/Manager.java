@@ -36,14 +36,17 @@ public class Manager {
                 gameBoard.printError("ERROR: INPUT \"" + input + "\" IS NOT VALID");
             }
             gameProcessor.processInput(input); //Valid input always passed
-            gameBoard.addMove();
 
             if(gameBoard.checkWin())
                 break;
         }
     }
     public boolean startMessage(){ // Check for 'Enter' to start game
-        System.out.println("Welcome to the game!");
+        System.out.println("Welcome to the game!\n");
+        System.out.println("These are the rules:");
+        System.out.println("Press 'D' to draw a card");
+        System.out.println("Press 'Q' to quit at any time");
+        System.out.println("Moves can be made from label1 to label 2 by entering <label1><label2> or <number of moves><label1><label2>\n");
         System.out.println("Press 'Enter' to start or 'Q' to quit");
         String input = inputHandler.getInput();
         while(true){
@@ -54,6 +57,11 @@ public class Manager {
             else if(inputHandler.isEnterCommand(input)){
                 System.out.println("Starting Game\n");
                 return true;
+            }
+            else{
+                gameBoard.printError("ERROR: INPUT \"" + input + "\" IS NOT VALID");
+                System.out.println("Press 'Enter' to start or 'Q' to quit");
+                input = inputHandler.getInput();
             }
         }
     }

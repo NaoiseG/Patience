@@ -8,5 +8,12 @@ public class Main {
 
 //HS: 1135
 
+// Type chcp 65001
+// Type [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+
+
+
+
+
 
 

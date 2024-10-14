@@ -31,11 +31,11 @@ public class MoveHandler {
         return false;
     }
 
-    public void addToLane(int lane, int moves, Pile dealer){ // Add card to lane
+    public boolean addToLane(int lane, int moves, Pile dealer){ // Add card to lane
         int size = dealer.size();
         if (size < 1 || moves > size){
             gameBoard.printError("ERROR: INSUFFICIENT NUMBER OF CARDS IN DEALING PILE"); //Insufficient number of cards
-            return;
+            return false;
         }
 
         Pile pile = gameBoard.getLanes().getPile(lane);
@@ -43,7 +43,7 @@ public class MoveHandler {
         Card highest = dealer.get(dealer.size() - moves); // Highest card being moved
         if(highest.isFaceDown()){ // Card isn't face up (Invalid move)
             gameBoard.printError("ERROR: NOT ALL REQUESTED CARDS ARE SHOWING"); // All cards are not showing
-            return;
+            return false;
         }
 
         if (checkLaneMove(lane, highest)){ // Move all requested cards
@@ -59,9 +59,12 @@ public class MoveHandler {
                     gameBoard.addPoints(5); // Award points
                 }
             }
+            return true;
         }
+
         else{
             gameBoard.printError("ERROR: INVALID MOVE ENTERED"); //Insufficient number of cards
+            return false;
         }
     }
     public boolean addToSuitPile(int moves, int index, Pile dealer){ // Add card to suit pile
