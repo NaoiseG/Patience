@@ -196,6 +196,7 @@ public class GameBoard {
     public void printWin(){
         System.out.println("Congratulations you won");
         printPoints();
+        printMoves();
     }
     public void printQuit(){
         System.out.println("Quitting game");

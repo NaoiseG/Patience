@@ -23,7 +23,7 @@ public class DeckTest{
     public void testShuffleAndDeal(){
         Card card1 = deck1.dealCard();
         Card card2 = deck2.dealCard();
-        assertNotEquals(card1, card2); //Different card at the top
+        assertNotEquals(card1, card2); //Different card at the topA
     }
 
 }

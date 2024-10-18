@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f7821d74-984c-4e5b-9c0d-cafd9a8edd01" name="Changes" comment="Loading project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MoveHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoveHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/DeckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MoveHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MoveHandlerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,41 +40,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.CardTest.executor": "Run",
-    "JUnit.GameBoardTest.executor": "Run",
-    "JUnit.GameBoardTest.testGetSuitPiles.executor": "Run",
-    "JUnit.GameBoardTest.testInitialization.executor": "Debug",
-    "JUnit.InputHandlerTest.executor": "Run",
-    "JUnit.MoveHandlerTest.executor": "Run",
-    "JUnit.ParseInputTest.executor": "Run",
-    "JUnit.Patience Test Suite.executor": "Run",
-    "JUnit.PileListTest.executor": "Run",
-    "JUnit.Unnamed.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Naoise/OneDrive/Documents/4th Year/Software Engineering/Patience/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/Naoise/OneDrive/Documents/4th Year/Software Engineering/Patience/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.CardTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GameBoardTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GameBoardTest.testGetSuitPiles.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GameBoardTest.testInitialization.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.InputHandlerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MoveHandlerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParseInputTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Patience Test Suite.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PileListTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Naoise/OneDrive/Documents/4th Year/Software Engineering/Patience/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Naoise/OneDrive/Documents/4th Year/Software Engineering/Patience/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
@@ -84,7 +83,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Patience Test Suite">
     <configuration name="GameBoardTest.testGetSuitPiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Patience" />
       <option name="PACKAGE_NAME" value="" />
@@ -130,7 +129,11 @@
       <workItem from="1727192045399" duration="25480000" />
       <workItem from="1727427392890" duration="82722000" />
       <workItem from="1728549505866" duration="9765000" />
-      <workItem from="1728638397650" duration="21667000" />
+      <workItem from="1728638397650" duration="28804000" />
+      <workItem from="1729172714731" duration="2000" />
+      <workItem from="1729176619482" duration="3000" />
+      <workItem from="1729177782865" duration="1000" />
+      <workItem from="1729204947056" duration="2940000" />
     </task>
     <task id="LOCAL-00001" summary="Loading project">
       <option name="closed" value="true" />

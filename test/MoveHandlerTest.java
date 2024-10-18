@@ -34,6 +34,17 @@ public class MoveHandlerTest{
         // Check lane move with Queen of Hearts
         assertTrue(moveHandler.checkLaneMove(7, queenOfHearts));
     }
+    @Test
+    public void testCheckSuitMove_Valid() {
+        // Add an Ace of Hearts to the suit pile (valid move for Two of Hearts)
+        Card suitCard = new Card(Suit.HEARTS, Rank.ACE);
+        gameBoard.getSuitPiles().getPile(0).add(suitCard);
+
+        Card twoOfHearts = new Card(Suit.HEARTS, Rank.TWO);
+
+        // Check suit move with Two of Hearts
+        assertTrue(moveHandler.checkSuitMove(1, twoOfHearts));
+    }
 
     @Test
     public void testCheckLaneMove_Invalid() {
@@ -47,17 +58,7 @@ public class MoveHandlerTest{
         assertFalse(moveHandler.checkLaneMove(7, queenOfSpades));
     }
 
-    @Test
-    public void testCheckSuitMove_Valid() {
-        // Add an Ace of Hearts to the suit pile (valid move for Two of Hearts)
-        Card suitCard = new Card(Suit.HEARTS, Rank.ACE);
-        gameBoard.getSuitPiles().getPile(0).add(suitCard);
 
-        Card twoOfHearts = new Card(Suit.HEARTS, Rank.TWO);
-
-        // Check suit move with Two of Hearts
-        assertTrue(moveHandler.checkSuitMove(1, twoOfHearts));
-    }
 
     @Test
     public void testCheckSuitMove_Invalid() {
